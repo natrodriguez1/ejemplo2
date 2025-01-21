@@ -7,63 +7,49 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<h1>Mi sitio web</h1>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#seccion1">Menu</a></li>
+				<li><a href="#seccion2">Reserva mesa</a></li>
+				<li><a href="#acerca-de">Acerca de</a></li>
+			</ul>
+		</nav>
+	</header>
+	<p id="banner">
+		<b>Ven, siéntate y déjate llevar por el aroma, los colores y los sabores que nos hacen únicos. Aquí, cada comida es una fiesta y cada visita, un viaje al alma de la gastronomía mexicana.</b>
+		<br>
+		<a href="#seccion2" class="button"><b>Reserva una mesa</b></a>
+	</p>
 	<div class="contenedor">
-		<header>
-			
-			<nav>
-				<ul>
-					<li><a href="#inicio">Inicio</a></li>
-					<li><a href="#seccion1">Sección 1</a></li>
-					<li><a href="#seccion2">Sección 2</a></li>
-					<li><a href="#acerca-de">Acerca de</a></li>
-				</ul>
-			</nav>
-		</header>
-
+	
 		<main>
 			<section id="inicio">
-				<h2>Bienvenido</h2>
-				<p>Este es un ejemplo de página web con diferentes etiquetas HTML5 y estilos CSS.</p>
+				<h2>¡Bienvenido a Comal: Taquería!</h2>
+				<p>En Comal, celebramos el auténtico sabor de México en cada bocado. Somos una taquería que honra las recetas tradicionales y el espíritu de nuestras cocinas, combinando ingredientes frescos y técnicas artesanales para ofrecerte una experiencia culinaria inolvidable.
+				</p>
 			</section>
 
 			<section id="seccion1">
-				<h2>Sección 1</h2>
-				<p>Contenido de la Sección 1</p>
-				<table>
-					<thead>
-						<tr>
-							<th>Columna 1</th>
-							<th>Columna 2</th>
-							<th>Columna 3</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Dato 1</td>
-							<td>Dato 2</td>
-							<td>Dato 3</td>
-						</tr>
-						<tr>
-							<td>Dato 4</td>
-							<td>Dato 5</td>
-							<td>Dato 6</td>
-						</tr>
-					</tbody>
-				</table>
+				<h2>Menú</h2>
+				<a href="https://www.instagram.com/stories/highlights/18175734874004353/?hl=en" class="button"><b>Mira nuestro menú aquí</b></a>
 			</section>
 
 			<section id="seccion2">
-				<h2>Sección 2</h2>
-				<p>Contenido de la Sección 2</p>
+				<h2>Reservar</h2>
+				<p>Reserva tu mesa aquí</p>
 				<form action="procesar.php" method="post">
 					<label for="nombre">Nombre:</label>
 					<input type="text" id="nombre" name="nombre" required>
 
+					<label for="mesa">Mesa para:</label>
+					<input type="text" id="mesa" name="mesa" required>
+
 					<label for="email">Correo electrónico:</label>
 					<input type="email" id="email" name="email" required>
 
-					<label for="mensaje">Mensaje:</label>
+					<label for="mensaje">Comentarios:</label>
 					<textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea>
 
 					<button type="submit">Enviar</button>
@@ -72,11 +58,11 @@
 
 			<section id="acerca-de">
 				<h2>Acerca de</h2>
-				<p>Información sobre el sitio web o el autor.</p>
+				<p>Información del desarrollador que hico esta página web</p>
 				<ul>
-					<li>Elemento 1 de la lista.</li>
-					<li>Elemento 2 de la lista.</li>
-					<li>Elemento 3 de la lista.</li>
+					<li>Natalie Rodríguez</li>
+					<li>Desarrolladora Full-Stack</li>
+					<li>Mira sus proyecto aquí: https://github.com/natrodriguez1</li>
 				</ul>
 			</section>
 		</main>

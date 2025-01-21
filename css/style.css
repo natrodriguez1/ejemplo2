@@ -7,39 +7,51 @@ body {
 header {
 	top: 20px; /* Posicionamiento superior */
     left: 0; /* Posicionamiento izquierdo */
-    width: 200px; /* Ancho del menú */
-    height: 100vh; /* Altura del menú (100% del viewport) */
-    background-color: #D6CFCD; /* Color de fondo del menú */
+    width: 100%; /* Ancho del menú */
+    height: 10vh; /* Altura del menú (100% del viewport) */
+    background-color: #000000; /* Color de fondo del menú */
     padding: 20px; /* Padding interno del menú */
 	flex:1;
+    display: block;
     transition: all 0.3s ease; /* Animación de transición para suavizar los cambios */
 }
 
 h1 {
     text-align: center;
-	display:block;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    overflow: hidden;
 }
+
+nav li{
+    float: left;
+}
+
 
 nav a {
     text-decoration: none;
+    text-align: center;
     color: #000;
+    padding: 3vh 3vw;
 	display: block; /* Ocupa todo el ancho disponible */
-    padding: 10px; /* Padding para cada enlace */
     text-decoration: none; /* Elimina la decoración por defecto */
     color: #fff; /* Color del texto de los enlaces */
     transition: color 0.3s ease; /* Animación de transición para el color */
 
 }
 
+nav a:hover{
+    color: #8f8e8e;
+}
+
 main {
-    padding: 20px;
+    padding-bottom: 3%;
+    padding-left: 12%;
+    padding-right: 12%;
 	display: inline;
 	flex:4;
 }
@@ -62,6 +74,14 @@ th, td {
     padding: 8px;
 }
 
+img{
+    height: 100%;
+}
+
+#seccion1 h2 p{
+    padding: 20%;
+}
+
 form {
     margin-bottom: 20px;
 }
@@ -77,6 +97,33 @@ textarea {
     width: 100%;
 }  
 
+#banner{
+    color: #ffffff;
+    padding:10%;
+    text-align: center;
+    font-size:xx-large;
+    margin-top: 0;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYXpfR4TXIN-wMoMWzVGM3WP6TVMn6aWdDyg&s');
+}
+
+p{
+    line-height: 2;
+}
+
+a.button {
+    padding: 1% 2%;
+    border: 2px outset;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(162, 106, 11);
+    text-decoration: none;
+    font-size: medium;
+}
 .contenedor{
-	display:flex;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#seccion1 a{
+    justify-content: center;
+    align-items: center;
 }
